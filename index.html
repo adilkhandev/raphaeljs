@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-latest.min.js"></script>
+        <script type="text/javascript" src="raphael-min.js"></script>
+    </head>
+    <body>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        	        $.ajax(
+            {
+                dataType: "JSON",
+                url: "data.php"
+            }).done(function  (data) {
+            	console.log(data);
+            })
+        })
+    
+        </script>
+</html>
